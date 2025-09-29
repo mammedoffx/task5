@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+const int size = 10;
+int* arr = new int[size]{2,4,7,4,2,6,8,34,8,5,3}; dynamic
+int arr[size]; staticdi 
+bunun olcusu deyisirmi ? eslinde array olcusu deyismir amma static arrayin olcusu deyismesede dinamik arrayi deyismek usulu
+python c++ c# html css javascript react angular sql 
+
+    Heap - adress big element , massives
+    stack - pointer
+    global-static 
+    codes - code source
+-->
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-green-400 p-4">
+    <form class="w-full max-w-sm bg-white/70 backdrop-blur rounded-2xl p-6 shadow-lg">
+        <div class="space-y-3">
+            <input id="i1" type="number" placeholder="Ədəd" class="w-full px-4 py-2 rounded-lg border focus:outline-none" />
+            <input id="i2" type="number" placeholder="Faiz" class="w-full px-4 py-2 rounded-lg border focus:outline-none" />
+        </div>
+        <button onclick="hesabla()" type="button" class="mt-4 w-full py-2 rounded-xl font-semibold shadow">Hesabla</button>
+        
+        <div class="mt-4 space-y-2 text-center">
+            <p id="res" class="text-sm"></p>
+        </div>
+    </form>
+    <script>
+        let i1 = document.getElementById('i1')
+        let i2 = document.getElementById('i2')
+        let res = document.getElementById('res')
+
+        function hesabla() {
+            res.innerHTML = i1.value + ' in ' +  i2.value + ' faizi ' + (i1.value * i2.value) / 100 + '%'
+        }
+    </script>
+</body>
+
+
+</html>
